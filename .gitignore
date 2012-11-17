@@ -4,6 +4,7 @@
 *.pyc
 *.swp
 
+.env
 .sass-cache
 
 celerybeat-schedule*
