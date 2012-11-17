@@ -114,7 +114,7 @@ DEBUG_TOOLBAR_CONFIG = {
 
 PIPELINE_CSS = {
     'master': {
-        'source_filenames': [],
+        'source_filenames': ['css/base.css'],
         'output_filename': 'css/master.css',
         'extra_context': {'media': 'screen'}
     }
