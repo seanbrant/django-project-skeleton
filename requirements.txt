@@ -8,6 +8,7 @@ dj-database-url==0.2.1
 django-debug-toolbar==0.9.4
 django-heroku-memcacheify==0.3
 django-jenkins==0.13.0
+django-pipeline==1.2.21
 django-postgrespool==0.2.4
 django-pylibmc-sasl==0.2.4
 gevent==0.13.8
