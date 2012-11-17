@@ -1,0 +1,13 @@
+version = '0.0'
+release = '0.0'
+project = '{{ project_name }}'
+copyright = '{% now "Y" %}, {{ project_name }}'
+extensions = ['sphinxcontrib.httpdomain']
+templates_path = ['_templates']
+source_suffix = '.rst'
+master_doc = 'index'
+exclude_patterns = ['_build']
+pygments_style = 'sphinx'
+html_theme = 'default'
+html_static_path = ['_static']
+htmlhelp_basename = '{{ project_name }}'

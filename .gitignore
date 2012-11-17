@@ -1,0 +1,15 @@
+*.DS_Store
+*.coverage
+*.db
+*.pyc
+*.swp
+
+.sass-cache
+
+celerybeat-schedule*
+
+docs/_build/*
+public/*
+reports/*
+uploads/*
+venv/*

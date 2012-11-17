@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% load compressed %}
+<html>
+    <head>
+        {% block styles %}{% compressed_css 'master' %}{% endblock %}
+    </head>
+    <body>
+        {% block content %}{{ project_name }}{% endblock %}
+        {% block scripts %}{% compressed_js 'master' %}{% endblock %}
+    </body>
+</html>
