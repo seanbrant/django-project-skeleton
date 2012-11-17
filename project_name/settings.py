@@ -84,7 +84,9 @@ INSTALLED_APPS = [
     # '{{ project_name }}.app2',
 ]
 
-DATABASES = database_config(default='sqlite:///{}'.format(os.path.join(PROJECT_ROOT, '{{ project_name }}.db')))
+DATABASES = {
+    'default': database_config(default='sqlite:///{}'.format(os.path.join(PROJECT_ROOT, '{{ project_name }}.db'))),
+}
 if 'postgresql' in DATABASES['default']['ENGINE']:
     DATABASES['default']['ENGINE'] = 'django_postgrespool'
     SOUTH_DATABASE_ADAPTERS = {'default': 'south.db.postgresql_psycopg2'}
